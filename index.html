@@ -5,101 +5,164 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Divyesh Shrestha</title>
-    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
 </head>
 <body>
-    <div class="main-picture">
+<div class="alert alert-danger">
     <main class="wrapper">
+        <button class="btn btn-danger">TEST</button>
         <!-- header section  -->
-        <div class="hero">
-            <nav class="container">
-                <div class="menu">
-                    <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#project">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </nav>
-            <div class="hero-content container">
+
+        <section class="header">
+            <div class="top-menu">
+                <nav class="navbar navbar-expand-md fs-3 fw-bolder">
+                    <div class="container">
+                      <a class="navbar-brand" href="#"></a>
+                      <button class="navbar-toggler" type="button" 
+                      data-bs-toggle="collapse" 
+                      data-bs-target="#navbarNav" 
+                      aria-controls="navbarNav" 
+                      aria-expanded="false" 
+                      aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <!-- <i class="fas fa-bars"></i> -->
+                      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+
+                        <ul class="navbar-nav">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#skills">Skills</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#about">About me</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                          </li>
+                          
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+            <div class="summary container mt-5">
+                <div class="row">
+                    <div class="col-md-6 order-md-2">
+               <div class="profile img">
+                <img src="img/my pic.jpeg" width="80%" alt="my photo"> 
+             </div>
+             </div>
+             <div class="col-md-6 order-md-1">
                 <div class="info">
                     <h1>Divyesh Shrestha</h1>
-                    <p>I am a Full-stack developer</p>
+                        <p>I am a Full-stack developer</p>
                 </div>
-                <div class="profile img">
-                   <img src="img/my pic.jpeg" width="100%" alt="my photo"> 
-                </div>
+             </div>
             </div>
-        </div>
-
+            </div>
+       </section>
         <!-- skills section  -->
-        <section id="skills" class="skills">
-            <div class="section-title">Skills</div>
-            <div class="skills-list">
-                <!-- <i class="fab fa-html5" style="color: red"></i> -->
-                <!-- <i class="fab fa-css3-alt" style="color: blue"></i>
-                <i class="fab fa-js-square" style="color: greenyellow"></i>
-                <i class="fab fa-react"></i> -->
-            <div class="list">
-         <ul>
-                <li><a href="">HTML</a></li>
-                <li><a href="">CSS</a></li>
-                <li><a href="">Javascript</a></li>
-               
-                
-                
+        <section id="skills" class="skills container py-5 ">
+            <div class="section-title fs-3 fw-bold text-center">Skills</div>
+            <div class="skills-list 
+            container 
+            fs-3 fw-bold
+             d-flex
+            justify-content-between 
+            flex-wrap
+            mt-4">
+                <div class="html">
+                <i class="fab fa-html5" style="color: red">HTML</i>
+            </div>
+                <div class="css"> 
+                    <i class="fab fa-css3-alt" style="color: blue">CSS</i>
+                </div>
+                <div class="javascript">
+                <i class="fab fa-js-square" style="color: rgb(100, 55, 55)">Javascript</i>
+            </div>
+              <div class="react">
+                  <i class="fab fa-react">React</i>
+                </div>
+                <div class="bootstrap">
+                <i class="fab fa-react">Bootstrap</i>
+            </div> 
+            <div class="node">
+                <i class="fab fa-react">Node.js</i>
+            </div> 
 
 
-            </ul>
-            </div>
-            <div class="list1">
-                <ul>
-                    <li><a href="">React</a></li>
-                    <li><a href="">Bootstrap</a></li>
-                    <li><a href="">Node.js</a></li>
-                    
-                </ul>
-            </div>
+            
             </div>
             
         </section>
 
-        <!-- Project  -->
+
+
+        <!-- projects -->
         <section id="project" class="project">
-            <div class="section-title">Projects</div>
-            <div class="pro-task-list">
-                <div class="pro-img">
-                    <img src="img/not to do list pics.png10000.png" alt="">
+           <div class="section-title fs-3 fw-bold text-center mb-4">Projects</div>
+            <div class="pro-task-list container">
+                <div class="row mb-4">
+                    <div class="col-6 md-6">
+                       <div class="pro-img">
+                            <img src="img/not to do list pics.png10000.png" width="100%" alt="">
+                        </div>
+                        </div>
+                    <div class="col-6 md-6">
+                        <div class="info mt-5">
+                            <div class="info-title fs-5
+                            ">Not to do List</div>
+                          <p class="para">About:
+                              This project is about managing the time to do task.The picture has been divided into two sections. On the 
+                            left is the task list that the amount of hours required to complete the task and other is
+                        the task that needs to be avoided to save the hours
+                           </p>
+                        </div>
+
+                    </div>
                 </div>
-                <div class="info">
-                    <div class="info-title">Not to do List</div>
-                  <p>About:
-                      This project is about managing the time to do task.The picture has been divided into two sections. On the 
-                    left is the task list that the amount of hours required to complete the task and other is
-                the task that needs to be avoided to save the hours</p>
-                </div>
+               
             </div>
 
         </section>
         <!-- about me  -->
         <section id="about" class="about">
-            <div class="section-title">About me</div>
+            <div class="container">
+            <div class="section-title fs-3 fw-bold text-center mt-5 mb-3">About me</div>
             <div class="overall">
             <div class="details">
                 My name is Divyesh Shrestha. Completed my Master in Applied Information 
                 Technolgy and currently taking coding extra classes.
             </div>
             </div>
+        </div>
         </section>
 
-        <footer class="footer">
-            Copyright.All right reserved.
+
+        <!-- footer  -->
+        <footer class="footer alert-danger text-center py-5">
+            <h3 class="footer-text">Copyright.All right reserved.</h3>
         </footer>
 <span id="go-up">
     <i class="fas fa-upload"></i>
 </span>
     </main>
 </div>
+
+
+
+
+
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9
+gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </body>
 </html>

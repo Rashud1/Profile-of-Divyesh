@@ -1,204 +1,70 @@
-
-:root{
-    --main-color: yellow;
-    --main-color1: white;
+html {
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
 }
 
-.main-picture{
-    background: url(img/ppp.jpg);
-}
-html{
-    scroll-behavior: smooth;
+body {
+  margin: 0;
+  position: relative;
 }
 
-*{
-    box-sizing: border-box;
+.wrapper {
+  position: relative;
 }
 
-body{
-    margin: 1;
-    color: red
+a.nav-link {
+  color: white;
+}
+a.nav-link:hover {
+  color: red;
 }
 
-.wrapper{
-    position: relative;
-}
-.container{
-    width: 80%;
-    margin: auto;
+.header {
+  background: url(img/ppp.jpg);
+  min-height: 50vh;
 }
 
-/* nav and hero section  */
-.hero {
-    background: url(img/opopopo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 50vh;
+.summary {
+  color: white;
 }
 
-nav {
-    font-size: 30px;
- 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-   
-
-
+.skills {
+  background: rgb(145, 145, 113);
 }
 
-.menu > ul {
-    list-style: none;
-    
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    color: yellow;
-    list-style-type: circle;
+.section-title {
+  border-bottom: 0.7rem solid black;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.menu > ul > li {
-    margin-right: 2rem;
-    font-weight: bolder;
-    align-items: center;
+.skills i {
+  font-size: 0.5rem;
 }
 
-/* hero contents */
-
-.hero-content{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  
-    }
-h1{
-    margin-top: 10rem;
+.skills-list > div {
+  margin: 2rem;
 }
 
+#go-up {
+  position: fixed;
+  width: 80px;
+  height: 80px;
+  right: 10px;
+  bottom: 20px;
 
-.info p{
-    font-size: 1.5rem;
-}
-
-.menu a:hover {
-color: white;
-transition: 0.5s;
-
-}
-
-/* skills section  */
-.skills-list i {
-    font-size: 8rem;
-    color: yellow;
-}
-
-.section-title{
-    font-size: 4rem;
-    /* background: black; */
-    width: 30%;
-    text-align: center;
-    border-bottom: 0.7rem solid blue;
-    font-weight: bolder;
-    margin-top: 4rem;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2rem;
-    
-
-}
-
-.skills-list > ul > li {
-  font-size: 2rem;
-  
-   
-}
-
-.skills-list{
-    min-height: 50vh;
-    background: black;
+  border-radius: 50%;
+  color: white;
+  font-size: 3rem;
   display: flex;
-  justify-content: space-evenly;
-  font-size: 2rem;
-  
+  justify-content: center;
+  align-items: center;
+  box-shadow: -5px 5px 5px 5px;
 }
 
-.list a:hover {
-    color: white;
-    transition: 0.5sec;
-}
-.list1 a:hover {
-    color: white;
-    transition: 0.5s;
-}
-
-.list{
-    margin-top: 3rem;
-}
-.list1{
-    margin-top: 3rem;   
-}
-
-/* .project section  */
-.pro-task-list{
-    background: black;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-}
-
-.pro-img {
-    width: 50%;
-
-}
-
-.pro-img img{
-    width: 100%;
-}
-
-.info {
-    width: 50%;
-    padding-left: 2rem;
-}
-
-.info-title{
-    padding-top: 4rem;
-    font-size: 2rem;
-    font-size: bold;
-    color: white;
-}
-
-.details{
-  padding-top: 7rem;
-    
-    margin-left: 14rem;
-}
-
-.overall{
-    min-height: 50vh;
-    background: black;
-}
-.footer{
-    margin-top: 1rem;
-
-    background: #000;
-    text-align: center;
-    padding: 5rem;
-}
-
-#go-up{
-    position: absolute;
-    font-size: 5rem;
-    color: white;
-    bottom: 10px;
-    right: 10px;
-    width: 100px;
-    height: 100px;
-    background:grey
-    ;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    box-shadow: -5px 5px 10px rgba(211, 209, 209, 0.3);
-
+.footer-text {
+  color: black;
 }
